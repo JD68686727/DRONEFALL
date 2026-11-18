@@ -19,7 +19,7 @@ Der Produktionsbuild wurde in Chromium geprüft. Der Testlauf umfasste alle zehn
 
 ## GitHub Pages
 
-Der Produktionsbuild wurde mit `npm ci` und `npm run build` geprüft. Die Pages-Einstellung und das erste Deployment sind aus der Cloud-Umgebung nicht verifizierbar. Die einmalige Aktivierung und der manuelle Start stehen in [README.md](README.md).
+Der Produktionsbuild wurde mit `npm ci` und `npm run build` geprüft. GitHub Pages wurde laut Rückmeldung des Repository-Inhabers aktiviert. Der Push dieser Übergabe stößt den Deployment-Workflow auf `main` an. Der Zugriff auf Actions und die Spielseite ist aus der Cloud-Umgebung blockiert. Der erfolgreiche Abschluss lässt sich in [GitHub Actions](https://github.com/JD68686727/DRONEFALL/actions/workflows/pages.yml) prüfen.
 
 ## Offen
 
