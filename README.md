@@ -15,6 +15,12 @@ npm run preview
 
 Der Produktionsbuild in `dist/` ist statisch hostbar. Der Slice läuft ohne CrazyGames-SDK.
 
+## GitHub Pages
+
+Der Workflow [Deploy game to GitHub Pages](.github/workflows/pages.yml) erstellt und veröffentlicht den Build bei Pushes auf `main`. Für die erste Bereitstellung in den Repository-Einstellungen unter **Pages → Build and deployment → Source** die Option **GitHub Actions** auswählen. Dann unter **Actions → Deploy game to GitHub Pages → Run workflow** auf `main` starten.
+
+Nach erfolgreicher Bereitstellung ist das Spiel unter <https://jd68686727.github.io/DRONEFALL/> erreichbar.
+
 ## Ausbau
 
 - **Rivergate:** Ein Fluss sperrt den direkten Weg zum HQ. Eine einzelne Brücke bündelt die Route. Baupositionen an den Brückenköpfen begünstigen Flächenschaden, während Uferpositionen mehr Reichweite erfordern.
