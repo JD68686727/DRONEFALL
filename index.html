@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111612">
+  <title>DRONEFALL — First Contact</title>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div class="brand"><div class="insignia" aria-hidden="true">DF</div><div><h1>DRONEFALL</h1><p>FIRST CONTACT</p></div></div>
+      <div class="mission"><span>STÜTZPUNKT 01</span><strong>S-Kurven-Korridor</strong></div>
+    </header>
+    <section class="hud" aria-label="Einsatzstatus">
+      <div><span>HQ-INTEGRITÄT</span><output id="integrity">20 / 20</output><meter id="health" min="0" max="20" value="20" aria-label="HQ-Integrität"></meter></div>
+      <div><span>CREDITS</span><output id="credits">550</output></div>
+      <div><span>TESTKAMPAGNE</span><output id="wave">0 / 10</output></div>
+      <div class="controls">
+        <button id="pause" type="button">Pause</button>
+        <button id="speed" type="button" aria-label="Spieltempo">1×</button>
+        <button id="restart" type="button">Neustart</button>
+        <button id="start" class="primary" type="button">Welle 1 starten</button>
+      </div>
+    </section>
+    <section class="battlefield" aria-label="Schlachtfeld">
+      <canvas width="1280" height="720" aria-label="Karte mit gegnerischem Spawn links und HQ rechts"></canvas>
+      <span class="map-label spawn-label" aria-hidden="true">SPAWN →</span>
+      <span class="map-label hq-label" aria-hidden="true">HQ</span>
+      <div class="overlay" id="overlay" hidden>
+        <div><h2 id="result"></h2><p id="summary"></p><button id="retry" type="button" class="primary">Neuer Einsatz</button></div>
+      </div>
+    </section>
+    <section class="arsenal" aria-label="Turmauswahl"></section>
+    <footer><span id="status" role="status">Turm wählen und auf freiem Gelände platzieren.</span><span class="key">Esc · Bauauswahl aufheben</span></footer>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
